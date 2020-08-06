@@ -1,0 +1,24 @@
+syntax = "proto3";
+package utils;
+
+//import "google/protobuf/timestamp.proto";
+
+option go_package = "./utils";
+
+message PacketClient {
+      int32 cmd = 1;
+      uint64 Msisdn = 2;
+      uint64 Imsi = 3;
+      string Cmnd = 4;
+      string name = 5;
+      string Dob = 6;
+
+
+}
+
+message PacketServer {
+      int32 cmd = 1;
+      int32 Rescode = 2;
+      string Reason = 3;
+}
+
